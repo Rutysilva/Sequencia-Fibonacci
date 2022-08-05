@@ -1,0 +1,11 @@
+numero = int(input("Digite um número inteiro para calcular o Fibonacci: "))
+
+anterior = 0
+proximo = 1
+
+for i in range(0,numero):
+  soma = anterior + proximo
+  anterior = proximo 
+  proximo = soma
+
+print("Fibonacci de " + str(numero)+" é "+str (anterior))
